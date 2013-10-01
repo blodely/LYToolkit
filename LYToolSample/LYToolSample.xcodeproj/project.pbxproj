@@ -18,6 +18,7 @@
 		B69707F718570727002C500D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69707F618570727002C500D /* Images.xcassets */; };
 		B697081F18570B8A002C500D /* LYContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B697081D18570B8A002C500D /* LYContact.m */; };
 		B697082218570BAF002C500D /* LYAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B697082118570BAF002C500D /* LYAddressBook.m */; };
+		B6B2D89117FAC901008DFE24 /* LYChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B2D89017FAC901008DFE24 /* LYChat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		B697081E18570B8A002C500D /* LYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTool.h; sourceTree = "<group>"; };
 		B697082018570BAF002C500D /* LYAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAddressBook.h; sourceTree = "<group>"; };
 		B697082118570BAF002C500D /* LYAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAddressBook.m; sourceTree = "<group>"; };
+		B6B2D88F17FAC901008DFE24 /* LYChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChat.h; sourceTree = "<group>"; };
+		B6B2D89017FAC901008DFE24 /* LYChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 			children = (
 				B653C7A7185C3AF00052E046 /* Pinyin */,
 				B697081B18570B8A002C500D /* _AddressBook */,
+				B6B2D88E17FAC8E0008DFE24 /* _Chat */,
 				B697081E18570B8A002C500D /* LYTool.h */,
 			);
 			name = LYTool;
@@ -148,6 +152,15 @@
 				B653C7A5185C355E0052E046 /* NSMutableArray+Grouping.m */,
 			);
 			path = _AddressBook;
+			sourceTree = "<group>";
+		};
+		B6B2D88E17FAC8E0008DFE24 /* _Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2D88F17FAC901008DFE24 /* LYChat.h */,
+				B6B2D89017FAC901008DFE24 /* LYChat.m */,
+			);
+			path = _Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 				B653C7A6185C355E0052E046 /* NSMutableArray+Grouping.m in Sources */,
 				B69707F118570727002C500D /* main.m in Sources */,
 				B697081F18570B8A002C500D /* LYContact.m in Sources */,
+				B6B2D89117FAC901008DFE24 /* LYChat.m in Sources */,
 				B69707F518570727002C500D /* LYAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
