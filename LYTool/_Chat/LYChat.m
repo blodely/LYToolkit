@@ -10,4 +10,6 @@
 
 @implementation LYChat
 
+#pragma mark - NSCODING
+
 @end

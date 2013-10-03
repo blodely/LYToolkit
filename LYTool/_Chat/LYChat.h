@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LYChat : NSObject
+@interface LYChat : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSDate *sentDate;
