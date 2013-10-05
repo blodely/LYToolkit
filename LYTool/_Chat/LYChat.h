@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+	LYChatTypeSelf = 0,
+	LYChatTypeOther = 1,
+} LYChatType;
+
 @interface LYChat : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSDate *sentDate;
+@property (nonatomic, assign) LYChatType type;
 
 @end
