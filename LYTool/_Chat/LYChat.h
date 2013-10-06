@@ -19,4 +19,7 @@ typedef enum {
 @property (nonatomic, strong) NSDate *sentDate;
 @property (nonatomic, assign) LYChatType type;
 
+@property (nonatomic, strong) NSString *idChat;
+
+
 @end

@@ -17,6 +17,9 @@
 		_message = [aDecoder decodeObjectForKey:@"ly.chat.message"];
 		_sentDate = [aDecoder decodeObjectForKey:@"ly.chat.sent.date"];
 		_type = [aDecoder decodeIntForKey:@"ly.chat.type"];
+		
+		_idChat = [aDecoder decodeObjectForKey:@"ly.chat.id"];
+		
 	}
 	return self;
 }
@@ -26,6 +29,9 @@
 	[aCoder encodeObject:self.message forKey:@"ly.chat.message"];
 	[aCoder encodeObject:self.sentDate forKey:@"ly.chat.sent.date"];
 	[aCoder encodeInt:self.type forKey:@"ly.chat.type"];
+	
+	[aCoder encodeObject:self.idChat forKey:@"ly.chat.id"];
+	
 }
 
 @end
