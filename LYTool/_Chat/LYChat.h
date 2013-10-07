@@ -20,6 +20,6 @@ typedef enum {
 @property (nonatomic, assign) LYChatType type;
 
 @property (nonatomic, strong) NSString *idChat;
-
+@property (nonatomic, strong) NSString *conversation;
 
 @end

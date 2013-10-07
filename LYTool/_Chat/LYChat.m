@@ -19,7 +19,7 @@
 		_type = [aDecoder decodeIntForKey:@"ly.chat.type"];
 		
 		_idChat = [aDecoder decodeObjectForKey:@"ly.chat.id"];
-		
+		_conversation = [aDecoder decodeObjectForKey:@"ly.chat.conversation"];
 	}
 	return self;
 }
@@ -31,7 +31,7 @@
 	[aCoder encodeInt:self.type forKey:@"ly.chat.type"];
 	
 	[aCoder encodeObject:self.idChat forKey:@"ly.chat.id"];
-	
+	[aCoder encodeObject:self.conversation forKey:@"ly.chat.conversation"];
 }
 
 @end
