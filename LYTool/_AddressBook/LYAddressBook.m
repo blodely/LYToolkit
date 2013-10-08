@@ -89,4 +89,8 @@
 
 #pragma mark -
 
++ (NSArray *)contactsAfter:(NSDate *)after {
+	return nil;
+}
+
 @end

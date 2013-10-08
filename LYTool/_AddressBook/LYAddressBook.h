@@ -20,4 +20,6 @@
 
 + (NSArray *)allContacts;
 
++ (NSArray *)contactsAfter:(NSDate *)after;
+
 @end
