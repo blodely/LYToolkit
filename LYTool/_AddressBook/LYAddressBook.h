@@ -20,6 +20,6 @@
 
 + (NSArray *)allContacts;
 
-+ (NSArray *)contactsAfter:(NSDate *)after;
++ (NSArray *)contactsAfter:(NSDate *)after; // NOT GROUPED COLLECTION
 
 @end

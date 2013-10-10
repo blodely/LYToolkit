@@ -141,6 +141,7 @@
 	// SORT RECORD
 	[contacts sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)], ]];
 	
+	// NOT GROUPED COLLECTION !!!
 	return [NSArray arrayWithArray:contacts];
 }
 
