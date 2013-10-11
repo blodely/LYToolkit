@@ -18,6 +18,8 @@
 		B69707F718570727002C500D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69707F618570727002C500D /* Images.xcassets */; };
 		B697081F18570B8A002C500D /* LYContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B697081D18570B8A002C500D /* LYContact.m */; };
 		B697082218570BAF002C500D /* LYAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B697082118570BAF002C500D /* LYAddressBook.m */; };
+		B69EA150186BD0B30087DD51 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EA14E186BD0B30087DD51 /* MenuViewController.m */; };
+		B69EA151186BD0B30087DD51 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EA14F186BD0B30087DD51 /* MenuViewController.xib */; };
 		B6B2D89117FAC901008DFE24 /* LYChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B2D89017FAC901008DFE24 /* LYChat.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,9 @@
 		B697081E18570B8A002C500D /* LYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTool.h; sourceTree = "<group>"; };
 		B697082018570BAF002C500D /* LYAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAddressBook.h; sourceTree = "<group>"; };
 		B697082118570BAF002C500D /* LYAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAddressBook.m; sourceTree = "<group>"; };
+		B69EA14D186BD0B30087DD51 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B69EA14E186BD0B30087DD51 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B69EA14F186BD0B30087DD51 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		B6B2D88F17FAC901008DFE24 /* LYChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChat.h; sourceTree = "<group>"; };
 		B6B2D89017FAC901008DFE24 /* LYChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +130,9 @@
 		B69708131857077D002C500D /* _Scene */ = {
 			isa = PBXGroup;
 			children = (
+				B69EA14D186BD0B30087DD51 /* MenuViewController.h */,
+				B69EA14E186BD0B30087DD51 /* MenuViewController.m */,
+				B69EA14F186BD0B30087DD51 /* MenuViewController.xib */,
 			);
 			path = _Scene;
 			sourceTree = "<group>";
@@ -216,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69707EF18570727002C500D /* InfoPlist.strings in Resources */,
+				B69EA151186BD0B30087DD51 /* MenuViewController.xib in Resources */,
 				B69707F718570727002C500D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +239,7 @@
 				B653C7AA185C3AF00052E046 /* pinyin.c in Sources */,
 				B697082218570BAF002C500D /* LYAddressBook.m in Sources */,
 				B653C7A6185C355E0052E046 /* NSMutableArray+Grouping.m in Sources */,
+				B69EA150186BD0B30087DD51 /* MenuViewController.m in Sources */,
 				B69707F118570727002C500D /* main.m in Sources */,
 				B697081F18570B8A002C500D /* LYContact.m in Sources */,
 				B6B2D89117FAC901008DFE24 /* LYChat.m in Sources */,
