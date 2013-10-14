@@ -14,6 +14,10 @@
 
 @implementation MenuViewController
 
+#pragma mark - ACTION
+
+#pragma mark - INIT
+
 - (id)init {
 	self = [super initWithNibName:@"MenuViewController" bundle:nil];
 	if (self) {
@@ -22,14 +26,28 @@
 	return self;
 }
 
+#pragma mark | VIEW LIFE CYCLE
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 }
 
+#pragma mark | MEMORY MANAGEMENT
+
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// DISPOSE OF ANY RESOURCES THAT CAN BE RECREATED.
 }
+
+#pragma mark - METHOD
+
+#pragma mark | PRIVATE METHOD
+
+#pragma mark - GETTER AND SETTER
+
+#pragma mark - DELEGATE
+
+#pragma mark - NOTIFICATION
 
 @end
