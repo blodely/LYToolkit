@@ -8,7 +8,10 @@
 
 #import "MenuViewController.h"
 
-@interface MenuViewController ()
+@interface MenuViewController () <UITableViewDataSource, UITableViewDelegate> {
+	
+	NSMutableArray *dsMenu;
+}
 
 @end
 
@@ -22,6 +25,8 @@
 	self = [super initWithNibName:@"MenuViewController" bundle:nil];
 	if (self) {
 		// CUSTOM INITIALIZATION
+		
+		dsMenu = [NSMutableArray arrayWithCapacity:1];
 	}
 	return self;
 }
@@ -31,6 +36,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
+	
+	self.navigationItem.title = @"LYTOOL SAMPLE MENU";
 }
 
 #pragma mark | MEMORY MANAGEMENT
@@ -47,6 +54,18 @@
 #pragma mark - GETTER AND SETTER
 
 #pragma mark - DELEGATE
+
+#pragma mark | UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [dsMenu count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
+	return nil;
+}
+
+#pragma mark | UITableViewDelegate
 
 #pragma mark - NOTIFICATION
 
