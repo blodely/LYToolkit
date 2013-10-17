@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : UIViewController {
+	
+	IBOutlet UITableView *tbMenu;
+}
 
 @end
