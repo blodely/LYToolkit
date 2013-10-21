@@ -31,6 +31,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
+	
+	self.navigationItem.title = @"CONTACTS";
 }
 
 #pragma mark MEMORY MANAGEMENT

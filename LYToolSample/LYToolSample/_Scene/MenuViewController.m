@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "ContactViewController.h"
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate> {
 	
@@ -14,6 +15,9 @@
 }
 
 @end
+
+
+static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 
 @implementation MenuViewController
 
@@ -33,13 +37,20 @@
 
 #pragma mark | VIEW LIFE CYCLE
 
+- (void)loadView {
+	[super loadView];
+	
+	[tbMenu registerClass:[UITableViewCell class] forCellReuseIdentifier:MenuCellIdentifier];
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
 	self.navigationItem.title = @"LYTOOL SAMPLE MENU";
 	
-//	[dsMenu addObjectsFromArray:@[]];
+	[dsMenu addObjectsFromArray:@[@"Contact",]];
+	[tbMenu reloadData];
 }
 
 #pragma mark | MEMORY MANAGEMENT
@@ -64,13 +75,24 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
-	return nil;
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MenuCellIdentifier forIndexPath:idp];
+	cell.textLabel.text = dsMenu[idp.row];
+	return cell;
 }
 
 #pragma mark | UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)idp {
 	
+	switch (idp.row) {
+		case 0: {
+			[self.navigationController pushViewController:[[ContactViewController alloc] init] animated:YES];
+		} break;
+			
+		default:
+			break;
+	}
 	[tableView deselectRowAtIndexPath:idp animated:YES];
 }
 
