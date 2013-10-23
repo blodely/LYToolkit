@@ -8,7 +8,7 @@
 
 #import "ContactViewController.h"
 
-@interface ContactViewController ()
+@interface ContactViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -49,6 +49,18 @@
 #pragma mark - GETTER AND SETTER
 
 #pragma mark - DELEGATE
+
+#pragma mark | UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
+	return nil;
+}
+
+#pragma mark | UITableViewDelegate
 
 
 @end
