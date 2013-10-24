@@ -8,9 +8,14 @@
 
 #import "ContactViewController.h"
 
-@interface ContactViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ContactViewController () <UITableViewDelegate, UITableViewDataSource> {
+	
+	NSMutableArray *dsContact;
+}
 
 @end
+
+static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 
 @implementation ContactViewController
 
@@ -22,6 +27,8 @@
 	self = [super initWithNibName:@"ContactViewController" bundle:nil];
 	if (self) {
 		// CUSTOM INITIALIZATION
+		
+		dsContact = [NSMutableArray arrayWithCapacity:1];
 	}
 	return self;
 }
@@ -52,12 +59,19 @@
 
 #pragma mark | UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return [dsContact count];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 0;
+	return [dsContact[section][@"SUBARRAY"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
-	return nil;
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContactCellIdentifier forIndexPath:idp];
+	
+	return cell;
 }
 
 #pragma mark | UITableViewDelegate
