@@ -80,7 +80,7 @@
 	}];
 	
 	// SORT GROUP
-	[contacts sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES selector:@selector(caseInsensitiveCompare:)], ]];
+	[contacts sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"TITLE" ascending:YES selector:@selector(caseInsensitiveCompare:)], ]];
 	
 	CFRelease(addressBook);
 	
