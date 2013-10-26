@@ -35,6 +35,12 @@ static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 
 #pragma mark | VIEW LIFE CYCLE
 
+- (void)loadView {
+	[super loadView];
+	
+	[tbContact registerClass:[UITableViewCell class] forCellReuseIdentifier:ContactCellIdentifier];
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
