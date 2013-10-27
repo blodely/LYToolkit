@@ -54,7 +54,21 @@
 			NSString *firstName = (__bridge_transfer NSString *)ABRecordCopyValue(one, kABPersonFirstNameProperty);
 			NSString *lastName = (__bridge_transfer NSString *)ABRecordCopyValue(one, kABPersonLastNameProperty);
 			
-			aContact.name = !firstName && !lastName ? [NSString stringWithFormat:@"%@ %@", firstName, lastName] : (!firstName ? firstName : (!lastName ? lastName : @" " ));
+			if (![firstName isEqualToString:@""]) {
+				
+				if (![lastName isEqualToString:@""]) {
+					aContact.name = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
+				} else {
+					aContact.name = firstName;
+				}
+			} else {
+				if (![lastName isEqualToString:@""]) {
+					aContact.name = lastName;
+				} else {
+					aContact.name = @"";
+				}
+			}
+//			aContact.name = !firstName && !lastName ? [NSString stringWithFormat:@"%@ %@", firstName, lastName] : (!firstName ? firstName : (!lastName ? lastName : @"#" ));
 			if (aContact.name != nil && ![aContact.name isEqualToString:@""] && ![aContact.name isEqualToString:@" "]) {
 				aContact.sort = [[NSString stringWithFormat:@"%c", pinyinFirstLetter([aContact.name characterAtIndex:0])] uppercaseString];
 			} else {
