@@ -51,6 +51,8 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 	
 	[dsMenu addObjectsFromArray:@[@"Contact",]];
 	[tbMenu reloadData];
+	
+	[LYAddressBook askAddressBookPermission];
 }
 
 #pragma mark | MEMORY MANAGEMENT
