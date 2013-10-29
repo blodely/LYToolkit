@@ -15,7 +15,6 @@
 
 @end
 
-static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 
 @implementation ContactViewController
 
@@ -37,8 +36,6 @@ static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 
 - (void)loadView {
 	[super loadView];
-	
-	[tbContact registerClass:[UITableViewCell class] forCellReuseIdentifier:ContactCellIdentifier];
 }
 
 - (void)viewDidLoad {
@@ -46,6 +43,8 @@ static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
 	self.navigationItem.title = @"CONTACTS";
+	
+	[self performSelector:@selector(loadAllContacts) withObject:nil afterDelay:0];
 }
 
 #pragma mark MEMORY MANAGEMENT
@@ -58,6 +57,13 @@ static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 #pragma mark - METHOD
 
 #pragma mark | PRIVATE METHOD
+
+- (void)loadAllContacts {
+	
+	[dsContact removeAllObjects];
+	[dsContact addObjectsFromArray:[LYAddressBook allContacts]];
+	[tbContact reloadData];
+}
 
 #pragma mark - GETTER AND SETTER
 
@@ -75,7 +81,14 @@ static NSString *ContactCellIdentifier = @"ContactCellIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
 	
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContactCellIdentifier forIndexPath:idp];
+	NSString *ContactCellIdentifier = [NSString stringWithFormat:@"ContactCellIdentifier %d %d", idp.section, idp.row];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ContactCellIdentifier];
+	if (cell == nil) {
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ContactCellIdentifier];
+		LYContact *one = dsContact[idp.section][@"SUBARRAY"][idp.row];
+		cell.textLabel.text = one.name;
+		cell.detailTextLabel.text = one.number;
+	}
 	
 	return cell;
 }
