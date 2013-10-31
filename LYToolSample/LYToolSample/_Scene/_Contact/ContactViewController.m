@@ -95,5 +95,9 @@
 
 #pragma mark | UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)idp {
+	
+	[tableView deselectRowAtIndexPath:idp animated:YES];
+}
 
 @end
