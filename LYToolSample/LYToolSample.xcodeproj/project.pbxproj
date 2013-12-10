@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B69707E518570727002C500D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69707E418570727002C500D /* Foundation.framework */; };
+		B69707E718570727002C500D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69707E618570727002C500D /* CoreGraphics.framework */; };
+		B69707E918570727002C500D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69707E818570727002C500D /* UIKit.framework */; };
+		B69707EF18570727002C500D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B69707ED18570727002C500D /* InfoPlist.strings */; };
+		B69707F118570727002C500D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69707F018570727002C500D /* main.m */; };
+		B69707F518570727002C500D /* LYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69707F418570727002C500D /* LYAppDelegate.m */; };
+		B69707F718570727002C500D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69707F618570727002C500D /* Images.xcassets */; };
+		B697081F18570B8A002C500D /* LYContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B697081D18570B8A002C500D /* LYContact.m */; };
+		B697082218570BAF002C500D /* LYAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B697082118570BAF002C500D /* LYAddressBook.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B69707E118570727002C500D /* LYToolSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYToolSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69707E418570727002C500D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B69707E618570727002C500D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B69707E818570727002C500D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B69707EC18570727002C500D /* LYToolSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LYToolSample-Info.plist"; sourceTree = "<group>"; };
+		B69707EE18570727002C500D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B69707F018570727002C500D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B69707F218570727002C500D /* LYToolSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYToolSample-Prefix.pch"; sourceTree = "<group>"; };
+		B69707F318570727002C500D /* LYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYAppDelegate.h; sourceTree = "<group>"; };
+		B69707F418570727002C500D /* LYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYAppDelegate.m; sourceTree = "<group>"; };
+		B69707F618570727002C500D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B69707FD18570727002C500D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B697081C18570B8A002C500D /* LYContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYContact.h; sourceTree = "<group>"; };
+		B697081D18570B8A002C500D /* LYContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYContact.m; sourceTree = "<group>"; };
+		B697081E18570B8A002C500D /* LYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTool.h; sourceTree = "<group>"; };
+		B697082018570BAF002C500D /* LYAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAddressBook.h; sourceTree = "<group>"; };
+		B697082118570BAF002C500D /* LYAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAddressBook.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B69707DE18570727002C500D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69707E718570727002C500D /* CoreGraphics.framework in Frameworks */,
+				B69707E918570727002C500D /* UIKit.framework in Frameworks */,
+				B69707E518570727002C500D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B69707D818570726002C500D = {
+			isa = PBXGroup;
+			children = (
+				B69707EA18570727002C500D /* LYToolSample */,
+				B69707E318570727002C500D /* Frameworks */,
+				B69707E218570727002C500D /* Products */,
+				B697081A18570B8A002C500D /* LYTool */,
+			);
+			sourceTree = "<group>";
+		};
+		B69707E218570727002C500D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B69707E118570727002C500D /* LYToolSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B69707E318570727002C500D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B69707E418570727002C500D /* Foundation.framework */,
+				B69707E618570727002C500D /* CoreGraphics.framework */,
+				B69707E818570727002C500D /* UIKit.framework */,
+				B69707FD18570727002C500D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B69707EA18570727002C500D /* LYToolSample */ = {
+			isa = PBXGroup;
+			children = (
+				B69707F318570727002C500D /* LYAppDelegate.h */,
+				B69707F418570727002C500D /* LYAppDelegate.m */,
+				B69708131857077D002C500D /* _Scene */,
+				B69707F618570727002C500D /* Images.xcassets */,
+				B69707EB18570727002C500D /* Supporting Files */,
+			);
+			path = LYToolSample;
+			sourceTree = "<group>";
+		};
+		B69707EB18570727002C500D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B69707EC18570727002C500D /* LYToolSample-Info.plist */,
+				B69707ED18570727002C500D /* InfoPlist.strings */,
+				B69707F018570727002C500D /* main.m */,
+				B69707F218570727002C500D /* LYToolSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B69708131857077D002C500D /* _Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Scene;
+			sourceTree = "<group>";
+		};
+		B697081A18570B8A002C500D /* LYTool */ = {
+			isa = PBXGroup;
+			children = (
+				B697081B18570B8A002C500D /* _AddressBook */,
+				B697081E18570B8A002C500D /* LYTool.h */,
+			);
+			name = LYTool;
+			path = ../LYTool;
+			sourceTree = "<group>";
+		};
+		B697081B18570B8A002C500D /* _AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				B697082018570BAF002C500D /* LYAddressBook.h */,
+				B697082118570BAF002C500D /* LYAddressBook.m */,
+				B697081C18570B8A002C500D /* LYContact.h */,
+				B697081D18570B8A002C500D /* LYContact.m */,
+			);
+			path = _AddressBook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B69707E018570727002C500D /* LYToolSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B697080D18570727002C500D /* Build configuration list for PBXNativeTarget "LYToolSample" */;
+			buildPhases = (
+				B69707DD18570727002C500D /* Sources */,
+				B69707DE18570727002C500D /* Frameworks */,
+				B69707DF18570727002C500D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYToolSample;
+			productName = LYToolSample;
+			productReference = B69707E118570727002C500D /* LYToolSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B69707D918570726002C500D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LY;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Luo Yu";
+			};
+			buildConfigurationList = B69707DC18570726002C500D /* Build configuration list for PBXProject "LYToolSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B69707D818570726002C500D;
+			productRefGroup = B69707E218570727002C500D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69707E018570727002C500D /* LYToolSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B69707DF18570727002C500D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69707EF18570727002C500D /* InfoPlist.strings in Resources */,
+				B69707F718570727002C500D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B69707DD18570727002C500D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B697082218570BAF002C500D /* LYAddressBook.m in Sources */,
+				B69707F118570727002C500D /* main.m in Sources */,
+				B697081F18570B8A002C500D /* LYContact.m in Sources */,
+				B69707F518570727002C500D /* LYAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B69707ED18570727002C500D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69707EE18570727002C500D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B697080B18570727002C500D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B697080C18570727002C500D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B697080E18570727002C500D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LYToolSample/LYToolSample-Prefix.pch";
+				INFOPLIST_FILE = "LYToolSample/LYToolSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B697080F18570727002C500D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LYToolSample/LYToolSample-Prefix.pch";
+				INFOPLIST_FILE = "LYToolSample/LYToolSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B69707DC18570726002C500D /* Build configuration list for PBXProject "LYToolSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B697080B18570727002C500D /* Debug */,
+				B697080C18570727002C500D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B697080D18570727002C500D /* Build configuration list for PBXNativeTarget "LYToolSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B697080E18570727002C500D /* Debug */,
+				B697080F18570727002C500D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B69707D918570726002C500D /* Project object */;
+}
