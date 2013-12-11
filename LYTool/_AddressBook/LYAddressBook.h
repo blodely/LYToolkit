@@ -10,4 +10,6 @@
 
 @interface LYAddressBook : NSObject
 
++ (NSArray *)allContacts;
+
 @end

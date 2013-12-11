@@ -10,5 +10,31 @@
 
 @implementation LYContact
 
+@synthesize name = _name;
+@synthesize number = _number;
+@synthesize uid = _uid;
+@synthesize avatar = _avatar;
+
+#pragma mark - NSCODING
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	if (self = [super init]) {
+		
+		_name = [aDecoder decodeObjectForKey:@"lycontact.name"];
+		_number = [aDecoder decodeObjectForKey:@"lycontact.number"];
+		_uid = [aDecoder decodeObjectForKey:@"lycontact.uid"];
+		_avatar = [aDecoder decodeObjectForKey:@"lycontact.avatar"];
+	}
+	return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+	
+	[aCoder encodeObject:self.name forKey:@"lycontact.name"];
+	[aCoder encodeObject:self.number forKey:@"lycontact.number"];
+	[aCoder encodeObject:self.uid forKey:@"lycontact.uid"];
+	[aCoder encodeObject:self.avatar forKey:@"lycontact.avatar"];
+	
+}
 
 @end

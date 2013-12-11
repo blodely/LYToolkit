@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LYContact : NSObject
+@interface LYContact : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *number;
