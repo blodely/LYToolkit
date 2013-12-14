@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *number;
+@property (nonatomic, strong) NSString *sort;
 
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) UIImage *avatar;

@@ -10,6 +10,8 @@
 
 @interface LYAddressBook : NSObject
 
++ (void)askAddressBookPermission;
+
 + (NSArray *)allContacts;
 
 @end

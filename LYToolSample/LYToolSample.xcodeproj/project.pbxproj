@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B653C7A6185C355E0052E046 /* NSMutableArray+Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = B653C7A5185C355E0052E046 /* NSMutableArray+Grouping.m */; };
 		B69707E518570727002C500D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69707E418570727002C500D /* Foundation.framework */; };
 		B69707E718570727002C500D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69707E618570727002C500D /* CoreGraphics.framework */; };
 		B69707E918570727002C500D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69707E818570727002C500D /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B653C7A4185C355E0052E046 /* NSMutableArray+Grouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Grouping.h"; sourceTree = "<group>"; };
+		B653C7A5185C355E0052E046 /* NSMutableArray+Grouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Grouping.m"; sourceTree = "<group>"; };
 		B69707E118570727002C500D /* LYToolSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYToolSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69707E418570727002C500D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B69707E618570727002C500D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				B697082118570BAF002C500D /* LYAddressBook.m */,
 				B697081C18570B8A002C500D /* LYContact.h */,
 				B697081D18570B8A002C500D /* LYContact.m */,
+				B653C7A4185C355E0052E046 /* NSMutableArray+Grouping.h */,
+				B653C7A5185C355E0052E046 /* NSMutableArray+Grouping.m */,
 			);
 			path = _AddressBook;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B697082218570BAF002C500D /* LYAddressBook.m in Sources */,
+				B653C7A6185C355E0052E046 /* NSMutableArray+Grouping.m in Sources */,
 				B69707F118570727002C500D /* main.m in Sources */,
 				B697081F18570B8A002C500D /* LYContact.m in Sources */,
 				B69707F518570727002C500D /* LYAppDelegate.m in Sources */,
