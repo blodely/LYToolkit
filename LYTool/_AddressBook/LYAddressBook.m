@@ -30,15 +30,17 @@
 	CFErrorRef *error = nil;
 	ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, error);
 	
+	// READ OUT ALL CONTACTS
 	NSArray *allContacts = (__bridge_transfer NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBook);
 	
-//	for (id one in allContacts) {
 	for (int i = 0; i < [allContacts count]; i++) {
 		
+		// GET ONE RECORD
 		ABRecordRef one = (__bridge ABRecordRef)allContacts[i];
 		
 		ABMultiValueRef numbers = ABRecordCopyValue(one, kABPersonPhoneProperty);
 		
+		// SPLIT BY NUMBER
 		for (int j = 0; j < ABMultiValueGetCount(numbers); j++) {
 			
 			LYContact *aContact = [[LYContact alloc] init];
