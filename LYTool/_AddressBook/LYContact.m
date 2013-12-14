@@ -13,6 +13,7 @@
 @synthesize name = _name;
 @synthesize number = _number;
 @synthesize sort = _sort;
+@synthesize lastSave = _lastSave;
 @synthesize uid = _uid;
 @synthesize avatar = _avatar;
 
@@ -24,6 +25,7 @@
 		_name = [aDecoder decodeObjectForKey:@"lycontact.name"];
 		_number = [aDecoder decodeObjectForKey:@"lycontact.number"];
 		_sort = [aDecoder decodeObjectForKey:@"lycontact.sort"];
+		_lastSave = [aDecoder decodeObjectForKey:@"lycontact.last.save"];
 		_uid = [aDecoder decodeObjectForKey:@"lycontact.uid"];
 		_avatar = [aDecoder decodeObjectForKey:@"lycontact.avatar"];
 	}
@@ -35,6 +37,7 @@
 	[aCoder encodeObject:self.name forKey:@"lycontact.name"];
 	[aCoder encodeObject:self.number forKey:@"lycontact.number"];
 	[aCoder encodeObject:self.sort forKey:@"lycontact.sort"];
+	[aCoder encodeObject:self.lastSave forKey:@"lycontact.last.save"];
 	[aCoder encodeObject:self.uid forKey:@"lycontact.uid"];
 	[aCoder encodeObject:self.avatar forKey:@"lycontact.avatar"];
 	

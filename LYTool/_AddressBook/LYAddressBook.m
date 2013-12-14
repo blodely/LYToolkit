@@ -10,6 +10,7 @@
 #import <AddressBook/AddressBook.h>
 #import "LYContact.h"
 #import "NSMutableArray+Grouping.h"
+#import "pinyin.h"
 
 @implementation LYAddressBook
 
@@ -46,7 +47,13 @@
 			NSString *lastName = (__bridge_transfer NSString *)ABRecordCopyValue(one, kABPersonLastNameProperty);
 			
 			aContact.name = !firstName && !lastName ? [NSString stringWithFormat:@"%@ %@", firstName, lastName] : (!firstName ? firstName : (!lastName ? lastName : @" " ));
+			if (aContact.name != nil && ![aContact.name isEqualToString:@""] && ![aContact.name isEqualToString:@" "]) {
+				aContact.sort = [[NSString stringWithFormat:@"%c", pinyinFirstLetter([aContact.name characterAtIndex:0])] uppercaseString];
+			} else {
+				aContact.sort = @"#";
+			}
 			aContact.number = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(numbers, j);
+			aContact.lastSave = (__bridge_transfer NSDate *)ABRecordCopyValue(one, kABPersonModificationDateProperty);
 			
 			[contacts addObject:aContact];
 			
