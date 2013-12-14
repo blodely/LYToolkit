@@ -53,6 +53,7 @@
 			aContact = nil;
 		}
 		
+		CFRelease(numbers);
 	}
 	
 	// SORT RECORD
@@ -65,6 +66,8 @@
 	
 	// SORT GROUP
 	[contacts sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES selector:@selector(caseInsensitiveCompare:)], ]];
+	
+	CFRelease(addressBook);
 	
 	return [NSArray arrayWithArray:contacts];
 }
