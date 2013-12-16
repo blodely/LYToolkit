@@ -44,3 +44,11 @@
 }
 
 @end
+
+@implementation NSString (Phone)
+
+- (NSString *)phoneNumber {
+	return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/.,()-+  "]] componentsJoinedByString:@""];
+}
+
+@end

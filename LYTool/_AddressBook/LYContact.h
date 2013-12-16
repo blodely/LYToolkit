@@ -19,3 +19,7 @@
 @property (nonatomic, strong) UIImage *avatar;
 
 @end
+
+@interface NSString (Phone)
+- (NSString *)phoneNumber;
+@end

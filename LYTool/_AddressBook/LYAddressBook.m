@@ -60,7 +60,7 @@
 			} else {
 				aContact.sort = @"#";
 			}
-			aContact.number = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(numbers, j);
+			aContact.number = [(__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(numbers, j) phoneNumber];
 			aContact.lastSave = (__bridge_transfer NSDate *)ABRecordCopyValue(one, kABPersonModificationDateProperty);
 			
 			[contacts addObject:aContact];
