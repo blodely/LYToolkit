@@ -10,7 +10,13 @@
 
 @interface LYAddressBook : NSObject
 
+#pragma mark - REQUEST ACCESS
+
 + (void)askAddressBookPermission;
+
+#pragma mark - QUERY
+
+#pragma mark | - ALL
 
 + (NSArray *)allContacts;
 

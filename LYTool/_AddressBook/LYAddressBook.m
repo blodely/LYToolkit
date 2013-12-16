@@ -14,6 +14,8 @@
 
 @implementation LYAddressBook
 
+#pragma mark - REQUEST ACCESS
+
 + (void)askAddressBookPermission {
 	
 	CFErrorRef *error = nil;
@@ -22,6 +24,10 @@
 		
 	});
 }
+
+#pragma mark - QUERY
+
+#pragma mark | - ALL
 
 + (NSArray *)allContacts {
 	
@@ -80,5 +86,7 @@
 	
 	return [NSArray arrayWithArray:contacts];
 }
+
+#pragma mark -
 
 @end
