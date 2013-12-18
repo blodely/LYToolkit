@@ -38,6 +38,8 @@
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
 	self.navigationItem.title = @"LYTOOL SAMPLE MENU";
+	
+//	[dsMenu addObjectsFromArray:@[]];
 }
 
 #pragma mark | MEMORY MANAGEMENT

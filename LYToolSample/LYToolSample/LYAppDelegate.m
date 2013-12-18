@@ -16,8 +16,10 @@
 	// OVERRIDE POINT FOR CUSTOMIZATION AFTER APPLICATION LAUNCH.
 	self.window.backgroundColor = [UIColor whiteColor];
 	
-	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[MenuViewController alloc] init]];
+	MenuViewController *menu = [[MenuViewController alloc] init];
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:menu];
 	self.window.rootViewController = nav;
+	
 	[self.window makeKeyAndVisible];
 	return YES;
 }
