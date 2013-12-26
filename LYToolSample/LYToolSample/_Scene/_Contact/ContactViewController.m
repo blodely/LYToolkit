@@ -34,10 +34,6 @@
 
 #pragma mark | VIEW LIFE CYCLE
 
-- (void)loadView {
-	[super loadView];
-}
-
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
