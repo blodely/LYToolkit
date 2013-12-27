@@ -22,6 +22,8 @@
 		B69EA151186BD0B30087DD51 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EA14F186BD0B30087DD51 /* MenuViewController.xib */; };
 		B69EA156186BD0B30087DD51 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EA154186BD0B30087DD51 /* ContactViewController.m */; };
 		B69EA157186BD0B30087DD51 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EA155186BD0B30087DD51 /* ContactViewController.xib */; };
+		B69EA15B186BF0500087DD51 /* CDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EA159186BF0500087DD51 /* CDateViewController.m */; };
+		B69EA15C186BF0500087DD51 /* CDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EA15A186BF0500087DD51 /* CDateViewController.xib */; };
 		B6B2D89117FAC901008DFE24 /* LYChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B2D89017FAC901008DFE24 /* LYChat.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,9 @@
 		B69EA153186BD0B30087DD51 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		B69EA154186BD0B30087DD51 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		B69EA155186BD0B30087DD51 /* ContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		B69EA158186BF0500087DD51 /* CDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDateViewController.h; sourceTree = "<group>"; };
+		B69EA159186BF0500087DD51 /* CDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDateViewController.m; sourceTree = "<group>"; };
+		B69EA15A186BF0500087DD51 /* CDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDateViewController.xib; sourceTree = "<group>"; };
 		B6B2D88F17FAC901008DFE24 /* LYChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYChat.h; sourceTree = "<group>"; };
 		B6B2D89017FAC901008DFE24 /* LYChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYChat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +179,9 @@
 				B69EA153186BD0B30087DD51 /* ContactViewController.h */,
 				B69EA154186BD0B30087DD51 /* ContactViewController.m */,
 				B69EA155186BD0B30087DD51 /* ContactViewController.xib */,
+				B69EA158186BF0500087DD51 /* CDateViewController.h */,
+				B69EA159186BF0500087DD51 /* CDateViewController.m */,
+				B69EA15A186BF0500087DD51 /* CDateViewController.xib */,
 			);
 			path = _Contact;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 				B69707EF18570727002C500D /* InfoPlist.strings in Resources */,
 				B69EA157186BD0B30087DD51 /* ContactViewController.xib in Resources */,
 				B69EA151186BD0B30087DD51 /* MenuViewController.xib in Resources */,
+				B69EA15C186BF0500087DD51 /* CDateViewController.xib in Resources */,
 				B69707F718570727002C500D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69EA15B186BF0500087DD51 /* CDateViewController.m in Sources */,
 				B653C7AA185C3AF00052E046 /* pinyin.c in Sources */,
 				B697082218570BAF002C500D /* LYAddressBook.m in Sources */,
 				B653C7A6185C355E0052E046 /* NSMutableArray+Grouping.m in Sources */,
