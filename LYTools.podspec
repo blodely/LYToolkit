@@ -1,32 +1,21 @@
-#
-# Be sure to run `pod lib lint LYTools.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
+# Luo Yu
+# indie.luo@gmail.com
 
 Pod::Spec.new do |s|
   s.name             = 'LYTools'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LYTools.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'tools'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+collection of tools.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/LYTools'
+  s.homepage         = 'https://github.com/blodely/LYTool'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '骆昱 (Mac mini)' => 'indie.luo@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/LYTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { '骆昱' => 'indie.luo@gmail.com' }
+  s.source           = { :git => 'https://github.com/blodely/LYTool.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://weibo.com/blodely'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,6 +26,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'AddressBook'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
