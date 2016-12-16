@@ -1,0 +1,16 @@
+PODS:
+  - LYTools (0.1.0)
+
+DEPENDENCIES:
+  - LYTools (from `../`)
+
+EXTERNAL SOURCES:
+  LYTools:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LYTools: c4b967607d6fb9a4aa702202ccdf57530c2ac118
+
+PODFILE CHECKSUM: 36367ef0310f0bdc5a4414eef19c4e3369393e8e
+
+COCOAPODS: 1.1.1
