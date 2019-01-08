@@ -34,3 +34,5 @@
 
 @end
 
+#import <LYToolkit/LYContact.h>
+#import <LYToolkit/LYAddressBook.h>
