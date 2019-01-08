@@ -1,11 +1,7 @@
 use_frameworks!
 
-target 'LYTools_Example' do
-  pod 'LYTools', :path => '../'
+platform :ios, '11.0'
 
-  target 'LYTools_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'LYToolkit_Example' do
+	pod 'LYToolkit', :path => '../'
 end

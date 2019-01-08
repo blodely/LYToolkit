@@ -1,6 +1,4 @@
-# LYTools
-
-Tools & Utilities.
+# LYToolkit
 
 ## Example
 
@@ -10,17 +8,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-LYTools is available through [LYSpecs](). To install
+LYToolkit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "LYTools"
+pod 'LYToolkit'
 ```
 
 ## Author
 
-骆昱 ([Luo Yu](http://luoyu.space)), indie.luo@gmail.com
+Luo Yu(blodely), indie.luo@gmail.com
 
 ## License
 
-LYTools is available under the MIT license. See the LICENSE file for more info.
+LYToolkit is available under the MIT license. See the LICENSE file for more info.
+
+
